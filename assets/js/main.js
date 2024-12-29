@@ -97,7 +97,7 @@ $('.testimonials-carousel').owlCarousel({
       },
       1000: {
         nav: true,
-        items: 2
+        items: 3
       }
   },
   navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
@@ -129,7 +129,46 @@ $(".property-carousel").owlCarousel({
   },
 });
 
+$(".place-carousel").owlCarousel({
+  loop: true,
+  margin: 20,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  dots: true,
+  navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    768: {
+      items: 2,
+      nav: false,
+    },
+    1024: {
+      items: 2,
+      nav: true,
+    },
+  },
+});
 
 AOS.init();
+
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+      const faqItem = question.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      // Close all FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+          item.classList.remove('active');
+      });
+      
+      // If the clicked item wasn't active, open it
+      if (!isActive) {
+          faqItem.classList.add('active');
+      }
+  });
+});
 
 })();
