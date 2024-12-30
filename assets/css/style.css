@@ -92,7 +92,6 @@ a {
 }
 
 
-
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
@@ -503,15 +502,17 @@ a {
         margin-bottom: 20px;
     }
 }
+
+.search-container {
+  background-color: #F6F7F9;
+  padding-bottom: 80px;
+}
+
 .search-section {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  transform: translate(-50%);
-  max-width: 1300px;
-  width: 100%;
-  margin: auto;
   padding: 0 1rem;
+  margin-top: -50px;
+  position: relative;
+  z-index: 9;
 }
 
 
