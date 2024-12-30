@@ -174,7 +174,7 @@ a {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--white);
+    color: var(--text-color-2);
   }
 }
 
@@ -772,6 +772,7 @@ background: var(--text-color-2);
 
 .footer a:hover {
   text-decoration: none;
+  color: var(--text-color-2);
 }
 
 .footer .social-icons li a {
