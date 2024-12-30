@@ -9,10 +9,8 @@
 
 :root {
   --primary: #4424EC;
-  --secondary: #FF5722;
   --white: #ffffff;
   --bg-primary: #10375C;
-  --text-color-secondary: #FF5722;
   --btn-hover: #cc4528;
   --text-color-1: #10375C;
   --text-color-2: #1A202C;
@@ -219,7 +217,7 @@ a {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--primary);
+    color: var(--text-color-2);
     padding: 10px 20px;
     font-size: 17px;
     font-weight: 500;
@@ -247,7 +245,7 @@ a {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--secondary);
+    color: var(--primary);
   }
 
   .navmenu .active i,
@@ -379,12 +377,6 @@ a {
   background-color: var(--bg-primary) !important;
 }
 
-.join-btn {
-  background-color: var(--secondary) !important;
-  border-radius: .4rem;
-  padding: .5rem 1.4rem;
-  font-weight: 600;
-}
 
 .btn-hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
